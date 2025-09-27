@@ -1,0 +1,157 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbb891; /* Background from your original CSS */
+    color: #000000;
+}
+
+/* Header Banner */
+.top-banner {
+    display: flex;
+    align-items: center;
+    background-color: #002171; /* Header color from your original CSS */
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+}
+
+.top-banner .logo img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.top-banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+    flex-grow: 1;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation Bars */
+.main-nav, .bottom-nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.main-nav ul, .bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li, .bottom-nav ul li {
+    margin: 0 20px;
+}
+
+.main-nav ul li a, .bottom-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.main-nav ul li a:hover, .bottom-nav ul li a:hover {
+    color: #90C7E3;
+}
+
+/* Main Content Area Layout */
+.content-area {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left and Right Panels */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-panel {
+    flex: 1.5; /* Makes the right panel wider */
+    border: 2px solid #000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    overflow-y: auto;
+    max-height: 550px; /* Adjust as needed */
+}
+
+/* Content Blocks inside Panels */
+.main-picture {
+    border: 2px solid #000;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.main-picture img {
+    width: 100%;
+    display: block;
+}
+
+.bottom-text-panel {
+    border: 2px solid #000;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.right-panel h2 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1976D2;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+.contact-us {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #000;
+}
+
+.contact-us p {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact-us a {
+    color: #90C7E3;
+    text-decoration: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+    .content-area {
+        flex-direction: column;
+    }
+
+    .top-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul, .bottom-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav ul li, .bottom-nav ul li {
+        margin: 5px 10px;
+    }
+}
