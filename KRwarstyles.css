@@ -1,17 +1,15 @@
-/* Basic Reset and Body Styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #bbb891; /* Background from your original CSS */
+    background-color: #bbb891;
     color: #000000;
 }
 
-/* Header Banner */
 .top-banner {
     display: flex;
     align-items: center;
-    background-color: #002171; /* Header color from your original CSS */
+    background-color: #002171;
     color: white;
     padding: 10px 20px;
     border-bottom: 2px solid #000;
@@ -31,7 +29,6 @@ body {
     letter-spacing: 0.1em;
 }
 
-/* Navigation Bars */
 .main-nav, .bottom-nav {
     background-color: #333;
     padding: 10px 0;
@@ -63,14 +60,14 @@ body {
     color: #90C7E3;
 }
 
-/* Main Content Area Layout */
+
 .content-area {
     display: flex;
     padding: 20px;
     gap: 20px;
 }
 
-/* Left and Right Panels */
+
 .left-panel {
     flex: 1;
     display: flex;
@@ -79,16 +76,15 @@ body {
 }
 
 .right-panel {
-    flex: 1.5; /* Makes the right panel wider */
+    flex: 1.5;
     border: 2px solid #000;
     background-color: white;
     padding: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
     overflow-y: auto;
-    max-height: 550px; /* Adjust as needed */
+    max-height: 550px;
 }
 
-/* Content Blocks inside Panels */
 .main-picture {
     border: 2px solid #000;
     background-color: white;
@@ -98,7 +94,9 @@ body {
 
 .main-picture img {
     width: 100%;
+    height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .bottom-text-panel {
@@ -116,7 +114,68 @@ body {
     padding-bottom: 10px;
 }
 
-/* Footer */
+/* --- Form Styles --- */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #002171;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1976D2;
+}
+
+
+/* --- Table Styles --- */
+.table-caption {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9e9e9;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 .contact-us {
     background-color: #333;
     color: white;
@@ -136,7 +195,7 @@ body {
     text-decoration: none;
 }
 
-/* Responsive adjustments for smaller screens */
+
 @media (max-width: 800px) {
     .content-area {
         flex-direction: column;
